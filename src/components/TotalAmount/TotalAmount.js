@@ -2,31 +2,30 @@ import React from "react";
 import '../TotalAmount/TotalAmount.css'
 
 
-function TotalAmount({ totalAmountShow }) {
+function TotalAmount({ totalAmountShow, date, max_amount }) {
     return (
         <div>
             <div className="card">
                 <div className="items">
                     <div className="totalamount">
-                        <div className="title">
-                            <h1>Total Expense</h1>
-                        </div>
-                        <div className="value">
-                            <p>{totalAmountShow}</p>
+                        <div className="title1">
+                            <h2>Total Expense</h2>
+
+                            <div className="expense">
+                                <p>{totalAmountShow}</p>
+                            </div>
                         </div>
                     </div>
 
                     <div className="expenseday">
-                        <div className="title">
-                            <h1>Most Expense Day</h1>
-                        </div>
-                        <div className="value">
-                            12/12/2023
+                        <div className="title2">
+                            <p>You spend <span> ${max_amount}</span> on <span>{date}</span> which is your most expensive day</p>
                         </div>
                     </div>
                     <div className="addnew">
-                        <button>Add Expense</button>
+                        <button><span className="button-span">+</span>New Expense</button>
                     </div>
+
                 </div>
             </div>
         </div>

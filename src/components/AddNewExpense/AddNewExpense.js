@@ -5,7 +5,7 @@ function AddNewExpense() {
     return (
         <>
             <div className="input-field">
-                <h1>Add New Expense</h1>
+                {/* <h1>Add New Expense</h1> */}
                 <form action="">
                     <div className="form-content">
                         <div className="name">

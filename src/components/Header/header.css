@@ -1,14 +1,12 @@
-
-.header{
+.header {
     width: 100%;
     height: 100px;
     margin-top: 0px;
     color: #fff;
-    background: skyblue;
+    background: rgb(65, 97, 109);
     text-align: left;
+}
+
+  .title {
+    padding: 29px 100px;
   }
-  
-  .title{
-    padding: 8px 100px;
-  }
-  
