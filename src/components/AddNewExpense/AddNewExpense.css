@@ -1,0 +1,40 @@
+.input-field{
+    margin-top: 80px;
+}
+
+.input-field h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.input-field input{
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+}
+
+.form-content{
+    justify-content: space-between;
+    display: flex;
+    padding: 0px 110px;
+    margin-bottom: 95px;
+}
+
+
+.input-field button{
+    color: #fff;
+    padding: 13px;
+    background: rgb(41, 63, 72);
+    font-size: 17px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+.add-expense-button{
+    margin-top: 33px;
+}
+
+.input-field button:hover{
+    background: rgb(101, 152, 172);
+}
