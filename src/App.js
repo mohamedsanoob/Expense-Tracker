@@ -16,37 +16,6 @@ function App() {
     totalamount += parseFloat(value.amount);
   });
 
-
-
-  // const expense_day = Object.groupBy(sampleData, ({ date }) => date);
-
-  // const result = {};
-
-  // Object.entries(expense_day).forEach((data) => {
-  //   let total = 0;
-
-  //   data[1].forEach((value) => {
-  //     total += parseFloat(value.amount);
-  //   })
-
-  //   result[data[0]] = {
-  //     [totalamount]: total,
-  //   };
-  // });
-
-
-  // let max_amount = 0;
-  // let date = "";
-  // Object.entries(result).forEach((value) => {
-  //   if (max_amount < value[1].totalamount) {
-  //     max_amount = value[1].totalamount;
-  //     date = value[0];
-  //   }
-  // });
-
-
-
-
   return (
     <div className="App">
       <Header />

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../LocationInfo/LocationInfo.css'
 
 
-
 function LocationInfo() {
     const [latitude, setLatitude] = useState(null);
     const [longitude, setLongitude] = useState(null);
@@ -10,7 +9,7 @@ function LocationInfo() {
     const [sunset, setSunset] = useState('');
 
     useEffect(() => {
-        // Use HTML Geolocation API to get latitude and longitude
+
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
                 setLatitude(position.coords.latitude);
@@ -18,14 +17,11 @@ function LocationInfo() {
             });
         }
 
-        // Fetch sunrise and sunset data
         fetchSunriseSunsetData();
     }, []);
 
     const fetchSunriseSunsetData = () => {
-        // Replace with the actual URL to fetch sunrise/sunset data
         const apiUrl = `https://api.sunrise-sunset.org/json?lat=${latitude}&lng=${longitude}`;
-
 
         fetch(apiUrl)
             .then((response) => response.json())

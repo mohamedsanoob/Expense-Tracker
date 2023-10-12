@@ -46,7 +46,6 @@ function ExpenseItem(props) {
                             <button onClick={handleDelete}>Delete</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

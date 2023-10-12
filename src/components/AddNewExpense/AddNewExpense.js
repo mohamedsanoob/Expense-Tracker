@@ -25,14 +25,7 @@ function AddNewExpense({ setOpenForm, setExpense }) {
         setExpense((prevState) => {
             return [...prevState, { ...expensedata, id: uuid() }];
         });
-
- 
     }
-
-
-
-    console.log(expensedata)
-
 
     return (
         <div className="input-field">
@@ -49,24 +42,39 @@ function AddNewExpense({ setOpenForm, setExpense }) {
                     </div>
                     <div className="expense-amount">
                         <label >Enter the Amount : </label>
-                        <input type="number" placeholder="Enter the Amount" name="amount" onChange={handleChange} />
+                        <input type="number"
+                            placeholder="Enter the Amount"
+                            name="amount" onChange={handleChange}
+                        />
+                    </div>
+                    <div className="expense-currency">
+                        <label >Enter the Currency : </label>
+                        <input type="text"
+                            placeholder="Enter the Currency"
+                            name="currency" onChange={handleChange}
+                        />
                     </div>
                     <div className="expense-date">
                         <label id="expensedate">
                             Enter the Date :
                         </label>
-                        <input type="date" placeholder="Enter the Date" name="date" onChange={handleChange} />
-                    </div>
-                    <div className="expense-currency">
-                        <label >Enter the Currency : </label>
-                        <input type="text" placeholder="Enter the Currency" name="currency" onChange={handleChange} />
+                        <input type="date"
+                            placeholder="Enter the Date"
+                            name="date" onChange={handleChange}
+                        />
                     </div>
                     <div className="expense-description">
                         <label >Enter the Description : </label>
-                        <input type="text" placeholder="Enter the Description" name="description" onChange={handleChange} />
+                        <input type="text"
+                            placeholder="Enter the Description"
+                            name="description" onChange={handleChange}
+                        />
                     </div>
                     <div className="add-expense-button">
-                        <button className="expense-button" onClick={handleSubmit}>Add Expense</button>
+                        <button className="expense-button"
+                            onClick={handleSubmit}>
+                            Add Expense
+                        </button>
                     </div>
                 </div>
             </form>

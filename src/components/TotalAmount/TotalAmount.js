@@ -1,7 +1,6 @@
 import React from "react";
 import '../TotalAmount/TotalAmount.css'
 
-
 function TotalAmount({ totalAmountShow, date, max_amount }) {
 
     return (
@@ -17,7 +16,6 @@ function TotalAmount({ totalAmountShow, date, max_amount }) {
                             </div>
                         </div>
                     </div>
-
                     <div className="expenseday">
                         <div className="title2">
                             <p>You spend <span> ${max_amount}</span> on <span>{date}</span> which is your most expensive day</p>
