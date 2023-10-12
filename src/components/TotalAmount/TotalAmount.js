@@ -3,6 +3,7 @@ import '../TotalAmount/TotalAmount.css'
 
 
 function TotalAmount({ totalAmountShow, date, max_amount }) {
+
     return (
         <div>
             <div className="card">

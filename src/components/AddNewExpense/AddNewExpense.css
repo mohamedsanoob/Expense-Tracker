@@ -9,7 +9,7 @@
 }
 
 .input-field input{
-    width: 100%;
+    width: 90%;
     height: 50px;
     margin-top: 8px;
 }
@@ -24,7 +24,7 @@
 
 .input-field button{
     color: #fff;
-    padding: 13px;
+    padding: 5px 10px;
     background: rgb(41, 63, 72);
     font-size: 17px;
     margin-left: 25px;

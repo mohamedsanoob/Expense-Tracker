@@ -1,0 +1,26 @@
+.location-details{
+    padding: 20px 5px;
+}
+
+.location-info {
+    justify-content: space-between;
+    float: right;
+    display: flex;
+    width: 34%;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    font-weight: 500;
+  
+}
+
+.location-info p {
+    margin: 5px 0;
+    
+}
